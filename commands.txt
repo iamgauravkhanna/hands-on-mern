@@ -1,0 +1,8 @@
+# to initalise project
+npm init -y
+
+# install stack
+npm install express cors mongodb dotenv
+
+# to auto restart server
+npm install -g nodemon
