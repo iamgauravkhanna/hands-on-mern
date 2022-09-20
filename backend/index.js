@@ -12,15 +12,15 @@ MongoClient.connect(
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-      }
+    }
 )
-.catch(err =>{
-    console.log('ERROR OCCURED......!!!')
-    console.log(err.stack)
-    process.exit(1)
-})
-.then(async client =>{
-    app.listen(port,()=>{
-        console.log(`Backend is Up. Listening to port: ${port}`)
+    .catch(err => {
+        console.log('ERROR OCCURED......!!!')
+        console.log(err.stack)
+        process.exit(1)
     })
-})
+    .then(async client => {
+        app.listen(port, () => {
+            console.log(`Backend is Up. Listening to port: ${port}`)
+        })
+    })
